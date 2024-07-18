@@ -25,6 +25,13 @@ body {
 
 /* ========================== Common =========================== */
 
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 a {
     text-decoration: none;
 }
@@ -406,4 +413,78 @@ a {
 
 .popular-bottom .row .btn:hover {
     background-color: var(--primary-color);
+}
+
+/* ========================== Feedback =========================== */
+
+.feedback {
+    background-color: #2e2100;
+}
+
+.feedback .body {
+    display: flex;
+    padding: 96px 0;
+    gap: 271px;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.feedback .body-left {
+}
+
+.feedback .avatar-image {
+    width: 72px;
+    height: 72px;
+    border-radius: 999px;
+    object-fit: cover;
+}
+
+.feedback .name {
+    margin-top: 18px;
+    color: #f7f7f7;
+    font-family: var(--font-heading);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.41; /* 141.667% */
+}
+
+.feedback .desc {
+    margin-top: 4px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
+
+.feedback .control-icon-circle {
+    margin-top: 28px;
+    margin-left: -6px;
+}
+
+.feedback .icon-circle {
+    border: none;
+    background: transparent;
+}
+
+.feedback .icon-circle + .icon-circle {
+    margin-left: -12px;
+}
+
+.feedback .body-right {
+    position: relative;
+}
+
+.feedback .body-right .svg {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+}
+
+.feedback .comment {
+    width: 740px;
+    color: #fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.53; /* 153.846% */
 }
