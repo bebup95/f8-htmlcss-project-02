@@ -429,9 +429,6 @@ a {
     align-items: baseline;
 }
 
-.feedback .body-left {
-}
-
 .feedback .avatar-image {
     width: 72px;
     height: 72px;
@@ -487,4 +484,65 @@ a {
     font-style: italic;
     font-weight: 400;
     line-height: 1.53; /* 153.846% */
+}
+
+/* ========================== Features =========================== */
+
+.Feature {
+    padding-top: 200px;
+}
+
+.Feature .body {
+    display: flex;
+    gap: 130px;
+    align-items: center;
+}
+
+.Feature .body-left .image {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    top: 34px;
+}
+
+.Feature .img-feature img {
+    width: 270px;
+    height: 405px;
+    border-radius: 16px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    object-fit: cover;
+}
+
+.Feature .img-feature + .img-feature {
+    position: relative;
+    bottom: 34px;
+}
+
+.Feature .body-right .title {
+    width: 470px;
+    color: #171100;
+    font-family: var(--font-heading);
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26; /* 126.316% */
+    letter-spacing: -0.76px;
+}
+
+.Feature .body-right .desc,
+.Feature .body-right .sub-desc {
+    margin-top: 16px;
+    width: 458px;
+    color: #5f5b53;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.Feature .btn {
+    margin-top: 36px;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+    padding: 11px 37px;
 }
