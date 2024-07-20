@@ -634,41 +634,36 @@ a {
     line-height: 1.75; /* 175% */
 }
 
-.blog .body-bottom {
-    margin-top: 55px;
-    /* padding-bottom: 140px; */
-}
-
-.blog .body-bottom .list-blog {
+.blog .list-blog {
     display: flex;
     gap: 30px;
-    align-items: center;
+    margin-top: 55px;
 }
 
-.blog .body-bottom .blog-item {
-    width: 370px;
-    height: 467px;
+.blog .blog-item {
+    flex-shrink: 0;
+    width: calc(33.33% - 20px);
     border-radius: 16px;
     background: #fff;
 }
 
-.blog .body-bottom .blog-item:hover {
+.blog .blog-item:hover {
     box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
 }
 
-.blog .body-bottom img {
-    width: 370px;
+.blog .list-blog img {
+    width: 100%;
     height: 250px;
     border-radius: 16px 16px 0px 0px;
     background: url(<path-to-image>) lightgray 50% / cover no-repeat;
     object-fit: cover;
 }
 
-.blog .body-bottom .info {
+.blog .info {
     margin: 20px 20px 28px 20px;
 }
 
-.blog .body-bottom .date {
+.blog .date {
     display: inline-flex;
     align-items: center;
     position: relative;
@@ -678,7 +673,7 @@ a {
     line-height: 1.86; /* 185.714% */
 }
 
-.blog .body-bottom .date::before {
+.blog .date::before {
     content: "";
     display: inline-block;
     width: 6px;
@@ -688,7 +683,7 @@ a {
     border-radius: 999px;
 }
 
-.blog .body-bottom .date::after {
+.blog .date::after {
     position: absolute;
     bottom: -12px;
     left: 0px;
@@ -700,16 +695,15 @@ a {
     background: #e2dfda;
 }
 
-.blog .body-bottom .title {
+.blog .title {
     margin-top: 25px;
-    width: 330px;
     color: #171100;
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.75; /* 175% */
 }
 
-.blog .body-bottom .btn {
+.blog .btn {
     margin-top: 12px;
     color: #fff;
     text-align: center;
@@ -720,7 +714,7 @@ a {
     background-color: #171100;
 }
 
-.blog .body-bottom .btn:hover {
+.blog .btn:hover {
     background-color: var(--primary-color);
 }
 
