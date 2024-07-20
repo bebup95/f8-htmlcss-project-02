@@ -25,6 +25,11 @@ body {
 
 /* ========================== Common =========================== */
 
+button {
+    padding-block: 0;
+    padding-inline: 0;
+}
+
 .line-clamp {
     display: -webkit-box;
     -webkit-line-clamp: var(--line-clamp, 2);
@@ -595,4 +600,142 @@ a {
     object-fit: cover;
     border-radius: 20px;
     background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+/* ========================== blog =========================== */
+
+.blog {
+    margin-top: 200px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    background: #fffcf4;
+}
+
+.blog .body-top .title {
+    color: #130606;
+    font-family: var(--font-heading);
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26; /* 126.316% */
+    letter-spacing: -0.76px;
+    text-align: center;
+}
+
+.blog .body-top .desc {
+    display: block;
+    width: 448px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    color: #696262;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.blog .body-bottom {
+    margin-top: 55px;
+    /* padding-bottom: 140px; */
+}
+
+.blog .body-bottom .list-blog {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.blog .body-bottom .blog-item {
+    width: 370px;
+    height: 467px;
+    border-radius: 16px;
+    background: #fff;
+}
+
+.blog .body-bottom .blog-item:hover {
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.blog .body-bottom img {
+    width: 370px;
+    height: 250px;
+    border-radius: 16px 16px 0px 0px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    object-fit: cover;
+}
+
+.blog .body-bottom .info {
+    margin: 20px 20px 28px 20px;
+}
+
+.blog .body-bottom .date {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    color: #5f5b53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86; /* 185.714% */
+}
+
+.blog .body-bottom .date::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: var(--primary-color);
+    margin-right: 4px;
+    border-radius: 999px;
+}
+
+.blog .body-bottom .date::after {
+    position: absolute;
+    bottom: -12px;
+    left: 0px;
+    content: "";
+    display: block;
+    width: 160px;
+    height: 1px;
+    border-radius: 0.5px;
+    background: #e2dfda;
+}
+
+.blog .body-bottom .title {
+    margin-top: 25px;
+    width: 330px;
+    color: #171100;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
+
+.blog .body-bottom .btn {
+    margin-top: 12px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.85; /* 185.714% */
+    padding: 12px 21px;
+    background-color: #171100;
+}
+
+.blog .body-bottom .btn:hover {
+    background-color: var(--primary-color);
+}
+
+.switch-dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 38px;
+}
+
+.switch-dot .dot {
+    border: none;
+    background: transparent;
+}
+
+.switch-dot .dot + .dot {
+    padding-left: 6px;
 }
