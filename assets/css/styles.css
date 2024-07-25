@@ -27,7 +27,7 @@ body {
 
 button {
     padding-block: 0;
-    padding-inline: 0;
+    /* padding-inline: 0; */
 }
 
 .line-clamp {
@@ -344,6 +344,7 @@ a {
 
 .popular-bottom .courses-item:hover {
     box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+    border: 1px solid #fff;
 }
 
 .popular-bottom .image-item .thumb {
@@ -362,6 +363,10 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.popular-bottom .info .head .title a {
+    color: #171100;
 }
 
 .popular-bottom .rating {
@@ -714,6 +719,12 @@ a {
     background-color: #171100;
 }
 
+/* Define CSS variables for colors */
+:root {
+    --footer-background: #2e2100;
+    --footer-border: #59554b;
+}
+
 .blog .btn:hover {
     background-color: var(--primary-color);
 }
@@ -728,6 +739,7 @@ a {
 .switch-dot .dot {
     border: none;
     background: transparent;
+    padding-inline: 0;
 }
 
 .switch-dot .dot + .dot {
@@ -738,13 +750,13 @@ a {
 
 .footer {
     padding: 96px 135px 0;
-    background: #2e2100;
+    background: var(--footer-background);
 }
 
 .footer .row {
     display: flex;
     padding-bottom: 38px;
-    border-bottom: 1px solid #59554b;
+    border-bottom: 1px solid var(--footer-border);
 }
 
 .footer .row .column {
