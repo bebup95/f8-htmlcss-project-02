@@ -429,14 +429,25 @@ a {
 
 .feedback {
   background-color: #2e2100;
+  padding: 96px 0;
+}
+
+.active {
+  fill: orange;
+}
+
+.feedback .feedback-list {
+  display: flex;
+  overflow: hidden;
 }
 
 .feedback .feedback-list .feedback-item {
   display: flex;
-  padding: 96px 0;
+  width: 100%;
   gap: 271px;
   justify-content: center;
   align-items: baseline;
+  flex-shrink: 0;
 }
 
 .feedback .avatar-image {
