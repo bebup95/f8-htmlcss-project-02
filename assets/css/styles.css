@@ -486,6 +486,7 @@ a {
 .feedback .icon-circle {
   border: none;
   background: transparent;
+  cursor: pointer;
 }
 
 .feedback .icon-circle + .icon-circle {
